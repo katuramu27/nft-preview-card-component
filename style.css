@@ -1,0 +1,121 @@
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+main {
+    margin: 6.25rem auto;
+    width: 375px;
+    height: 100%;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    padding: 10px;
+}
+.overlay {
+    position: relative;
+}
+#equilibrium {
+    width: 85%;
+    height: 85%;
+    border-radius: 10px;
+    margin: 20px auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    opacity: 1;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+ 
+  }
+
+.container {
+    padding: 15px 25px;
+}
+.container h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.container>p {
+    color: hsl(215, 51%, 70%);
+    font-size: 1.125rem;
+    font-weight: 300;
+    padding: 25px 0;
+}
+
+.numbers {
+   display: flex;
+   
+   justify-content: space-between;
+}
+.numbers>div {
+    display: inherit;
+    align-items: center;
+}
+.numbers>div>#cyan {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: hsl(178, 100%, 50%);
+}
+.numbers>div>p {
+    color: hsl(215, 51%, 70%);
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: hsl(215, 32%, 27%);
+    margin: 20px 0;
+}
+
+.author {
+    display: flex;
+    gap: 0.3125rem;
+}
+.author>img {
+    width: 12%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.author>p {
+    display: inherit;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+}
+span {
+    color: hsl(0, 0%, 100%);
+}
+
+h1:hover, span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+#equilibrium:hover {
+ 
+    opacity:0.3;
+    cursor: pointer;
+}
+  
+  .overlay:hover .middle {
+    opacity: 1;
+    cursor: pointer;
+  }
